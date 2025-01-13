@@ -19,7 +19,7 @@ Esta aplicación permite inventariar los archivos de Google Drive de un usuario 
 
 1. Clonar el repositorio:
    ```bash
-   git clone 
+   git clone https://github.com/tatlopez/Challenge-Drive.git
    cd app
 
 2. Instalar las dependencias:
