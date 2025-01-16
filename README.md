@@ -129,6 +129,18 @@ Para testing, se debe:
 1. Agregar la cuenta de Google como usuario de prueba en Google Cloud Console
 2. Al ver la pantalla de advertencia durante la autenticación, hacer clic en "Continuar" 
 
+### 🧪 Tests de la aplicación
+
+    tests/
+    │
+    ├── conftest.py   #Configuracion de pytest  
+    ├── test_db.py    #Pruebas de la base de datos
+    ├── test_drive.py   #Pruebas de manejos de archivos de Drive e interaccion con la API
+    ├── test_email.py   #Pruebas para el envio de correos     
+ 
+1. Ejecutar los tests:
+   ```bash
+   pytest tests/ --disable-warnings -v
 
 ### 📝 Autor
 Desarrollado por Tatiana Lopez.

@@ -15,7 +15,6 @@ def main():
     print('Iniciando inventario de archivos...')
     for file in files:
         parsed_file = parse_file(file)
-
         if parsed_file['owner'] != authenticated_user_email:
             continue  
 
