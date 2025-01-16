@@ -119,16 +119,6 @@ La aplicación utiliza OAuth 2.0 para la autenticación, implementando el flujo 
    - Obtiene información sobre el usuario autenticado
    - Campo solicitado: `user` para obtener el email
 
-### ⚠️ Nota Importante
-La aplicación está actualmente en estado de desarrollo/testing, por lo cual no ha pasado el proceso de verificación de Google. Esto implica que: 
-- Solo puede ser utilizada con hasta 100 usuarios de prueba
-- Al autenticarse, el usuario va a ver una advertencia de "App no verificada"
-- Se deberá usar una cuenta que esté registrada como usuario de prueba en el proyecto de Google Cloud
-
-Para testing, se debe:
-1. Agregar la cuenta de Google como usuario de prueba en Google Cloud Console
-2. Al ver la pantalla de advertencia durante la autenticación, hacer clic en "Continuar" 
-
 ### 🧪 Tests de la aplicación
 
     tests/
@@ -141,6 +131,16 @@ Para testing, se debe:
 1. Ejecutar los tests:
    ```bash
    pytest tests/ --disable-warnings -v
+
+### ⚠️ Nota Importante
+La aplicación está actualmente en estado de desarrollo/testing, por lo cual no ha pasado el proceso de verificación de Google. Esto implica que: 
+- Solo puede ser utilizada con hasta 100 usuarios de prueba
+- Al autenticarse, el usuario va a ver una advertencia de "App no verificada"
+- Se deberá usar una cuenta que esté registrada como usuario de prueba en el proyecto de Google Cloud
+
+Para testing, se debe:
+1. Agregar la cuenta de Google como usuario de prueba en Google Cloud Console
+2. Al ver la pantalla de advertencia durante la autenticación, hacer clic en "Continuar" 
 
 ### 📝 Autor
 Desarrollado por Tatiana Lopez.
